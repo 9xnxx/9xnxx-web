@@ -141,64 +141,6 @@ nav .nav-inner {
     }
 }
 
-.video-card {
-    border: 1px solid rgba(255,255,255,0.1);
-    background: #080808;
-    padding: 14px;
-    margin-bottom: 42px;
-    animation: fadeUp 0.9s ease 0.15s both;
-    position: relative;
-    overflow: hidden;
-}
-
-.video-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(
-        to right,
-        transparent,
-        rgba(255,255,255,0.3),
-        transparent
-    );
-}
-
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-}
-
-.video-item {
-    position: relative;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: #050505;
-    overflow: hidden;
-    aspect-ratio: 16 / 9;
-    transition: border-color 0.35s ease, transform 0.35s ease;
-}
-
-.video-item:hover {
-    border-color: rgba(255,255,255,0.3);
-    transform: translateY(-3px);
-}
-
-.video-item iframe {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border: 0;
-    filter: grayscale(60%) brightness(0.7) contrast(1.05);
-    transition: filter 0.4s ease;
-}
-
-.video-item:hover iframe {
-    filter: grayscale(0%) brightness(1) contrast(1);
-}
-
 .hero p.lead {
     font-size: 17px;
     color: #a8a8a8;
@@ -324,12 +266,6 @@ section.block {
     margin-bottom: 48px;
 }
 
-.section-head .num {
-    font-size: 12px;
-    color: #606060;
-    letter-spacing: 2px;
-}
-
 .section-head h2 {
     font-size: 26px;
     font-weight: 700;
@@ -422,10 +358,6 @@ section.block {
     border: 1px solid rgba(255,255,255,0.14);
     padding: 4px 10px;
 }
-
-/* ============================= */
-/* ANNA CARD IMAGE                */
-/* ============================= */
 
 .bot-card {
     display: block;
@@ -585,12 +517,6 @@ section.block {
     margin-bottom: 40px;
 }
 
-.socials-head .num {
-    font-size: 12px;
-    color: #606060;
-    letter-spacing: 2px;
-}
-
 .socials-head h2 {
     font-size: 26px;
     font-weight: 700;
@@ -727,12 +653,6 @@ footer .foot-inner {
     }
 }
 
-@media (max-width: 900px) {
-    .video-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 720px) {
     .wrap {
         padding: 0 20px;
@@ -759,15 +679,6 @@ footer .foot-inner {
         font-size: 38px;
         margin-bottom: 32px;
         min-height: 3em;
-    }
-
-    .video-card {
-        padding: 10px;
-    }
-
-    .video-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
     }
 
     .hero p.lead {
@@ -847,45 +758,10 @@ footer .foot-inner {
         <span class="cursor"></span>
     </h1>
 
-    <div class="video-card">
-        <div class="video-grid">
-
-            <div class="video-item">
-                <iframe
-                    src="https://www.youtube.com/embed/rfscVS0vtbw"
-                    title="video"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-
-            <div class="video-item">
-                <iframe
-                    src="https://www.youtube.com/embed/W6NZfCO5SIk"
-                    title="video"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-
-            <div class="video-item">
-                <iframe
-                    src="https://www.youtube.com/embed/TlB_eWDSMt4"
-                    title="video"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-
-        </div>
-    </div>
-
     <p class="lead">
-        Developer di balik Anna dan Ellen. Fokus pada arsitektur bot Discord
-        yang stabil, cepat, dan dapat diandalkan untuk komunitas berskala besar.
+        Ngobrol soal bot Discord, ngulik fitur, atau sekadar sharing
+        soal ekonomi virtual dan mini games. Anna dan Ellen dibuat
+        biar server kamu makin rame.
     </p>
 
     <div class="hero-actions">
@@ -917,7 +793,6 @@ footer .foot-inner {
 <section class="block" id="about">
 
     <div class="section-head">
-        <span class="num">01</span>
         <h2>About</h2>
         <span class="line"></span>
     </div>
@@ -929,11 +804,11 @@ footer .foot-inner {
         font-size: 16px;
         line-height: 1.8;
     ">
-        Saya mengembangkan bot Discord dengan pendekatan yang bersih dan terukur.
-        Setiap project dirancang untuk menangani beban komunitas nyata tanpa
-        mengorbankan performa. Anna dan Ellen adalah dua bot utama yang saat ini
-        aktif dikembangkan dan dipelihara secara berkelanjutan dengan dukungan
-        dari Patreon.
+        Saya bikin bot Discord buat seru-seruan dan bantu komunitas.
+        Anna dan Ellen adalah dua bot yang lagi aktif saya kelola,
+        mulai dari fitur ekonomi, games, sampai hal-hal kecil yang
+        bikin server terasa lebih hidup. Dukungan dari Patreon bantu
+        bot ini tetap jalan terus.
     </p>
 
 </section>
@@ -941,14 +816,12 @@ footer .foot-inner {
 <section class="block" id="projects">
 
     <div class="section-head">
-        <span class="num">02</span>
         <h2>Bot Discord</h2>
         <span class="line"></span>
     </div>
 
     <div class="projects">
 
-        <!-- ANNA -->
         <a href="anna.html" class="project bot-card">
 
             <span class="id">BOT / 001</span>
@@ -974,7 +847,6 @@ footer .foot-inner {
 
         </a>
 
-        <!-- ELLEN -->
         <div class="project">
 
             <span class="id">BOT / 002</span>
@@ -1002,7 +874,6 @@ footer .foot-inner {
 <section class="block" id="support">
 
     <div class="section-head">
-        <span class="num">03</span>
         <h2>Support</h2>
         <span class="line"></span>
     </div>
@@ -1076,7 +947,6 @@ footer .foot-inner {
 <section class="socials" id="socials">
 
     <div class="socials-head">
-        <span class="num">04</span>
         <h2>Links</h2>
         <span class="line"></span>
     </div>
